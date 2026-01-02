@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>단기 급등주 체험방</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="logos">
+        <img src="assets/logo1.png" alt="로고1" />
+        <span class="x">×</span>
+        <img src="assets/logo2.png" alt="로고2" />
+        <span class="x">×</span>
+        <img src="assets/logo3.png" alt="로고3" />
+      </div>
+
+      <h1>증권경제방송 제휴<br/>단기 급등주 체험방 OPEN</h1>
+      <p class="sub">1%의 시그널로, 100%의 기회를 만든다</p>
+
+      <div class="cta-row">
+        <button id="openModal" class="btn primary">지금 신청하기</button>
+        <a class="btn ghost" href="#proof">성과 보기</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="proof" class="section">
+      <div class="container">
+        <h2>이전 기수 성과</h2>
+        <div class="cards">
+          <div class="card">
+            <div class="k">평균 수익률</div>
+            <div class="v">+60%</div>
+            <div class="d">최저 ~ 최고 구간은 예시로 표기</div>
+          </div>
+          <div class="card">
+            <div class="k">매매 승률</div>
+            <div class="v">70%</div>
+            <div class="d">XX전 XX승 XX패</div>
+          </div>
+          <div class="card">
+            <div class="k">누적 수익률</div>
+            <div class="v">+109.47%</div>
+            <div class="d">검증 내역 요약</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>간편한 시스템</h2>
+        <ul class="list">
+          <li>매일 2종목 제공</li>
+          <li>실시간 시황/섹터 브리핑</li>
+          <li>포트는 10종목 이내로 단순화</li>
+        </ul>
+        <button id="openModal2" class="btn primary wide">체험방 참여 신청하기</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- 모달 -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close="1"></div>
+    <div class="modal__panel" role="dialog" aria-modal="true">
+      <div class="modal__header">
+        <h3>체험방 참여 신청</h3>
+        <button class="icon-btn" id="closeModal" aria-label="닫기">×</button>
+      </div>
+
+      <!-- 가장 쉬운 방식: 구글폼/탈리 링크 -->
+      <p class="muted">버튼을 누르면 신청 폼으로 이동합니다.</p>
+      <a class="btn primary wide" href="https://forms.gle/여기에구글폼" target="_blank" rel="noreferrer">
+        신청 폼 열기
+      </a>
+
+      <!-- 또는 iframe으로 폼을 모달 안에 넣을 수도 있어요 (원하면 만들어드릴게요) -->
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
